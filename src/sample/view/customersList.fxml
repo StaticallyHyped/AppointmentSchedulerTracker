@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="410.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.CustomersListController">
+    <children>
+        <GridPane alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="400.0" prefWidth="677.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="444.0" minWidth="10.0" prefWidth="360.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="421.0" minWidth="0.0" prefWidth="98.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="208.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="298.0" minHeight="10.0" prefHeight="295.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label prefHeight="31.0" prefWidth="107.0" text="Clients List">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Label>
+                <AnchorPane prefHeight="260.0" prefWidth="106.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <Label layoutY="14.0" prefHeight="110.0" prefWidth="100.0" text="Select a client from the list and press &quot;View Customer Information&quot; to view more details" wrapText="true">
+                            <padding>
+                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                            </padding>
+                        </Label>
+                        <GridPane layoutY="121.0" prefHeight="126.0" prefWidth="113.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Button fx:id="proceedButton" alignment="CENTER" mnemonicParsing="false" onAction="#goToCustomerInfo" prefHeight="42.0" prefWidth="100.0" text="View Customer Information" textAlignment="CENTER" wrapText="true">
+                                    <padding>
+                                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                    </padding>
+                                </Button>
+                                <Button fx:id="deleteClientButton" mnemonicParsing="false" onAction="#deleteSelected" prefHeight="44.0" prefWidth="100.0" text="Delete Client" GridPane.rowIndex="1" />
+                                <Button fx:id="goToAddClientButton" mnemonicParsing="false" onAction="#goToAddClient" prefHeight="46.0" prefWidth="101.0" text="Add A New Client" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
+                            </children>
+                        </GridPane>
+                    </children>
+                </AnchorPane>
+                <TableView fx:id="clientsListTableView" prefHeight="256.0" prefWidth="334.0" GridPane.rowIndex="1">
+                    <columns>
+                        <TableColumn fx:id="nameColumn" prefWidth="104.0" text="Customer Name" />
+                        <TableColumn fx:id="phoneColumn" prefWidth="98.0" text="Phone Number" />
+                        <TableColumn fx:id="addressColumn" prefWidth="85.0" text="Address" />
+                        <TableColumn fx:id="custIdColumn" prefWidth="67.0" text="Cust ID" />
+                    </columns>
+                    <padding>
+                        <Insets left="2.0" top="2.0" />
+                    </padding>
+                    <GridPane.margin>
+                        <Insets left="3.0" />
+                    </GridPane.margin>
+                </TableView>
+                <GridPane prefHeight="305.0" prefWidth="202.0" GridPane.columnIndex="2" GridPane.rowSpan="2147483647">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="154.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="154.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="154.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="220.0" minHeight="0.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="220.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="220.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <GridPane GridPane.rowIndex="4">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="60.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label prefHeight="37.0" prefWidth="149.0" text="# of appointments types in selected month:" textAlignment="RIGHT" wrapText="true">
+                                    <padding>
+                                        <Insets left="15.0" />
+                                    </padding>
+                                </Label>
+                                <Label fx:id="aptsByMonth" GridPane.columnIndex="1">
+                                    <padding>
+                                        <Insets left="10.0" right="15.0" />
+                                    </padding>
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                    <GridPane.margin>
+                                        <Insets left="10.0" />
+                                    </GridPane.margin>
+                                </Label>
+                            </children>
+                        </GridPane>
+                        <Label text="Generate Reports">
+                            <font>
+                                <Font name="System Bold" size="17.0" />
+                            </font>
+                        </Label>
+                        <ChoiceBox fx:id="consultScheduleCB" prefHeight="25.0" prefWidth="176.0" GridPane.rowIndex="6">
+                            <padding>
+                                <Insets left="8.0" />
+                            </padding>
+                            <GridPane.margin>
+                                <Insets left="8.0" />
+                            </GridPane.margin>
+                        </ChoiceBox>
+                        <ChoiceBox fx:id="aptByMonthReport" prefHeight="25.0" prefWidth="176.0" GridPane.rowIndex="2">
+                            <padding>
+                                <Insets left="8.0" />
+                            </padding>
+                            <GridPane.margin>
+                                <Insets left="8.0" />
+                            </GridPane.margin>
+                        </ChoiceBox>
+                        <Label text="Appointment Types by Month" textAlignment="CENTER" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets left="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label text="Consultants' Schedules" textAlignment="CENTER" GridPane.rowIndex="5">
+                            <GridPane.margin>
+                                <Insets left="5.0" />
+                            </GridPane.margin>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="customerCountButton" mnemonicParsing="false" onAction="#generateReportButton" prefHeight="42.0" prefWidth="184.0" text="Click to show # of unique customers" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+                        <Button fx:id="aptTypeByMonthButton" mnemonicParsing="false" onAction="#getAptByMonth" prefHeight="25.0" prefWidth="193.0" text="Generate Report" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                        <GridPane GridPane.rowIndex="7">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="128.0" minWidth="10.0" prefWidth="121.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="87.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label prefHeight="57.0" prefWidth="118.0" text="Select a consultant to view their schedule:" textAlignment="CENTER" wrapText="true">
+                                    <GridPane.margin>
+                                        <Insets left="5.0" />
+                                    </GridPane.margin>
+                                    <padding>
+                                        <Insets left="1.0" right="3.0" />
+                                    </padding>
+                                </Label>
+                                <Button fx:id="goToSchedButton" mnemonicParsing="false" onAction="#goToSchedViewer" prefHeight="54.0" prefWidth="87.0" text="Go to schedules" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" />
+                            </children>
+                        </GridPane>
+                        <GridPane GridPane.rowIndex="9">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label fx:id="clientCountLabel" GridPane.columnIndex="1">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                                </Label>
+                                <Label text="Current Customer Count Is:" textAlignment="RIGHT" wrapText="true">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets right="5.0" />
+                                    </padding>
+                                </Label>
+                            </children>
+                        </GridPane>
+                    </children>
+                </GridPane>
+                <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="backToLoginButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#setBackToLoginButton" prefHeight="62.0" prefWidth="166.0" text="Return to login screen" wrapText="true">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </GridPane.margin>
+                        </Button>
+                        <Button fx:id="exitCustListButton" mnemonicParsing="false" onAction="#exitCustomersList" prefHeight="44.0" prefWidth="120.0" text="Exit Application" GridPane.columnIndex="1" />
+                    </children>
+                </GridPane>
+            </children>
+            <padding>
+                <Insets left="3.0" />
+            </padding>
+        </GridPane>
+    </children>
+</AnchorPane>
