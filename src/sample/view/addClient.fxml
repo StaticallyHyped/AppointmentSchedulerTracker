@@ -57,7 +57,7 @@
                 <TextField fx:id="clientAddressText" GridPane.columnIndex="2" GridPane.rowIndex="4" />
                 <TextField fx:id="clientPhoneText" GridPane.columnIndex="2" GridPane.rowIndex="5" />
                 <Button fx:id="submitAddClient" mnemonicParsing="false" onAction="#addClient" text="Submit" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                <Button fx:id="cancelAddClient" mnemonicParsing="false" onAction="#cancelBackToCustInfo" text="Cancel" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                <Button fx:id="cancelAddClient" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#cancelBackToCustInfo" text="Cancel" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
             </children>
         </GridPane>
     </children>

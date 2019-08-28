@@ -14,9 +14,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.CustomerInfoController">
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.CustomerInfoController">
     <children>
-        <AnchorPane layoutY="-1.0" prefHeight="400.0" prefWidth="601.0">
+        <AnchorPane layoutY="-1.0" prefHeight="550.0" prefWidth="800.0">
             <children>
                 <BorderPane layoutX="145.0" layoutY="69.0" prefHeight="400.0" prefWidth="601.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <left>
@@ -26,14 +26,14 @@
                                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="156.0" />
                             </columnConstraints>
                             <rowConstraints>
-                                <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="122.0" minHeight="0.0" prefHeight="36.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="194.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="215.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="243.0" minHeight="2.0" prefHeight="32.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="243.0" minHeight="2.0" prefHeight="14.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="199.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="122.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="194.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="215.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="243.0" minHeight="2.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="243.0" minHeight="2.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="331.0" minHeight="10.0" prefHeight="331.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
                                 <Label text="Client Information">
@@ -89,7 +89,7 @@
                                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                     </rowConstraints>
                                     <children>
-                                        <Button fx:id="setWeekViewButton" mnemonicParsing="false" onAction="#setWeekView" prefHeight="52.0" prefWidth="75.0" text="Week View" wrapText="true">
+                                        <Button fx:id="setWeekViewButton" mnemonicParsing="false" onAction="#setWeekView" prefHeight="37.0" prefWidth="75.0" text="Week View" wrapText="true">
                                             <font>
                                                 <Font size="11.0" />
                                             </font>
@@ -127,23 +127,23 @@
                         </GridPane>
                     </left>
                     <right>
-                        <GridPane prefHeight="400.0" prefWidth="275.0" BorderPane.alignment="CENTER">
+                        <GridPane prefHeight="550.0" prefWidth="424.0" BorderPane.alignment="CENTER">
                             <columnConstraints>
-                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="165.0" />
-                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="110.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.0" minWidth="10.0" prefWidth="303.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="121.0" />
                             </columnConstraints>
                             <rowConstraints>
                                 <RowConstraints maxHeight="127.0" minHeight="0.0" prefHeight="2.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
-                                <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="92.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
                                 <RowConstraints maxHeight="270.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
                                 <RowConstraints maxHeight="270.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
                                 <RowConstraints maxHeight="270.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
                                 <RowConstraints maxHeight="270.0" minHeight="10.0" prefHeight="190.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
-                                <Button fx:id="newAppointmentButton" mnemonicParsing="false" onAction="#goToNewAppointment" prefHeight="22.0" prefWidth="252.0" text="Create A New Appointment With This Client" textAlignment="CENTER" wrapText="true" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                <Button fx:id="newAppointmentButton" mnemonicParsing="false" onAction="#goToNewAppointment" prefHeight="46.0" prefWidth="252.0" text="Create A New Appointment With This Client" textAlignment="CENTER" wrapText="true" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="2">
                                     <padding>
                                         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                                     </padding>
@@ -151,15 +151,15 @@
                                         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                                     </GridPane.margin>
                                 </Button>
-                                <Button fx:id="updateExistingButton" mnemonicParsing="false" onAction="#goToUpdateAppointment" prefHeight="58.0" prefWidth="133.0" text="Update An Existing Appointment" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                <Button fx:id="updateExistingButton" mnemonicParsing="false" onAction="#goToUpdateAppointment" prefHeight="44.0" prefWidth="133.0" text="Update An Existing Appointment" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                                     <GridPane.margin>
-                                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                        <Insets bottom="2.0" left="4.0" right="2.0" top="2.0" />
                                     </GridPane.margin>
                                     <padding>
                                         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                                     </padding>
                                 </Button>
-                                <Label prefHeight="34.0" prefWidth="230.0" text="Appointment Scheduling" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                                <Label prefHeight="34.0" prefWidth="230.0" text="Appointment Scheduling" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                                     <font>
                                         <Font name="System Bold" size="15.0" />
                                     </font>
@@ -171,18 +171,21 @@
                                     </padding>
                                 </Label>
                                 <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
-                                <Label prefHeight="55.0" prefWidth="110.0" text="Update Client Information" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                <Label prefHeight="55.0" prefWidth="110.0" text="Update Client Information:" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
                                     <font>
                                         <Font name="System Bold" size="12.0" />
                                     </font>
                                     <padding>
                                         <Insets bottom="1.0" left="2.0" right="2.0" top="1.0" />
                                     </padding>
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
                                 </Label>
-                                <GridPane GridPane.columnSpan="2" GridPane.rowIndex="7">
+                                <GridPane prefHeight="205.0" prefWidth="433.0" GridPane.columnSpan="2" GridPane.rowIndex="7">
                                     <columnConstraints>
                                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="161.0" />
-                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="114.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="114.0" />
                                     </columnConstraints>
                                     <rowConstraints>
                                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -190,9 +193,9 @@
                                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                     </rowConstraints>
                                     <children>
-                                        <Button fx:id="modCustInfoButton" mnemonicParsing="false" onAction="#modifyClientInfo" prefHeight="46.0" prefWidth="109.0" text="Save Changes" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                        <Button fx:id="cancelBackToCustListButton" mnemonicParsing="false" onAction="#backToClientList" prefHeight="48.0" prefWidth="109.0" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                        <Button fx:id="deleteAppointmentButton" mnemonicParsing="false" onAction="#deleteSelected" prefHeight="44.0" prefWidth="105.0" text="Delete An Existing Appointment" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                                        <Button fx:id="modCustInfoButton" mnemonicParsing="false" onAction="#modifyClientInfo" prefHeight="46.0" prefWidth="109.0" text="Save Changes" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                                        <Button fx:id="cancelBackToCustListButton" mnemonicParsing="false" onAction="#backToClientList" prefHeight="48.0" prefWidth="109.0" text="Cancel" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                                        <Button fx:id="deleteAppointmentButton" mnemonicParsing="false" onAction="#deleteSelected" prefHeight="44.0" prefWidth="105.0" text="Delete An Existing Appointment" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
                                             <padding>
                                                 <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                                             </padding>
@@ -202,19 +205,25 @@
                                         </Button>
                                     </children>
                                 </GridPane>
-                                <Label text="Select an appointment from the table to update it:" textAlignment="RIGHT" wrapText="true" GridPane.rowIndex="3">
+                                <Label text="Select an appointment from the table to update it" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
                                     <padding>
                                         <Insets left="10.0" right="10.0" />
                                     </padding>
                                     <font>
                                         <Font name="System Bold" size="12.0" />
                                     </font>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" />
+                           </GridPane.margin>
                                 </Label>
-                                <TableView fx:id="viewTV" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" GridPane.rowSpan="4">
+                                <TableView fx:id="viewTV" prefHeight="346.0" prefWidth="173.0" GridPane.rowIndex="4" GridPane.rowSpan="4">
                                     <columns>
                                         <TableColumn fx:id="viewPeriod" prefWidth="86.0" text="Month" />
                                         <TableColumn fx:id="viewDate" prefWidth="78.0" text="Date" />
                                     </columns>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" />
+                           </GridPane.margin>
                                 </TableView>
                             </children>
                         </GridPane>
